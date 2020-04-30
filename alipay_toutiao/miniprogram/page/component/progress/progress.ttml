@@ -1,0 +1,12 @@
+<view  class="page">
+  <view  class="page-description">进度条</view>
+  <view  class="page-section">
+    <view  class="page-section-demo">
+      <progress  percent="20" show-info></progress>
+      <progress  percent="40" active></progress>
+      <progress  percent="60" stroke-width="10"></progress>
+      <progress  percent="80" color="#10AEFF"></progress>
+      <progress  percent="80" activeColor="#6abf47" backgroundColor="#f4333c"></progress>
+    </view>
+  </view>
+</view>

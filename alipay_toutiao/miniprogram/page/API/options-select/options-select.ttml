@@ -1,0 +1,12 @@
+<view  class="page">
+  <view  class="page-description">选项选择器 API</view>
+  <view  class="page-section">
+    <view  class="page-section-title">my.optionsSelect</view>
+    <view  class="page-section-demo">
+      <onekit-button  type="primary" bindtap="openOne">单列选择器</onekit-button>
+    </view>
+    <view  class="page-section-demo">
+      <onekit-button  type="primary" bindtap="openTwo">双列选择器</onekit-button>
+    </view>
+  </view>
+</view>

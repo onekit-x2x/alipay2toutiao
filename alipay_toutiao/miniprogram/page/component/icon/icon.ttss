@@ -1,0 +1,14 @@
+.icon-list{
+  display: flex ;
+  -webkit-flex-wrap: wrap ;
+  flex-wrap: wrap ;
+}
+.item{
+  display: flex ;
+  flex-direction: column ;
+  -webkit-flex-direction: column ;
+  margin-bottom: 10px ;
+  margin-right: 10px ;
+  align-items: center ;
+  -webkit-align-items: center ;
+}

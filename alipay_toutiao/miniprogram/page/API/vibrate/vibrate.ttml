@@ -1,0 +1,15 @@
+<view  class="page">
+
+  <onekit-button  type="primary" bindtap="vibrate">
+    开始振动
+  </onekit-button>
+
+  <onekit-button  type="primary" bindtap="vibrateLong">
+    长时间振动 (400ms)
+   </onekit-button>
+
+  <onekit-button  type="primary" bindtap="vibrateShort">
+    短时间振动 (40ms)
+  </onekit-button>
+
+</view>

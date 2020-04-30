@@ -1,0 +1,7 @@
+
+<onekit-button  bindtap="audioPlay">播放</onekit-button>
+<onekit-button  bindtap="audioPause">暂停</onekit-button>
+<onekit-button  bindtap="audioStop">停止</onekit-button>
+<onekit-button  bindtap="audio14">seek到14秒</onekit-button>
+<onekit-button  bindtap="audioStart">seek开头</onekit-button>
+<onekit-button  bindtap="getAllProps">获取后台音频属性</onekit-button>

@@ -1,0 +1,3 @@
+<view  class="page">
+  <onekit-button  bindtap="index">点击回到首页</onekit-button>
+</view>

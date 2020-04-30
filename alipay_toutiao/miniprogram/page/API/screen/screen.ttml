@@ -1,0 +1,23 @@
+<view  class="page">
+  <view  class="page-description">屏幕亮度 API</view>
+  <view  class="page-section">
+    <view  class="page-section-title">设置是否保持屏幕长亮状态</view>
+    <view  class="page-section-demo">
+      <switch  checked="{{status}}" bindchange="switchKeepScreenOn"></switch>
+    </view>
+  </view>
+  <view  class="page-section">
+    <view  class="page-section-title">设置屏幕亮度</view>
+    <view  class="page-section-demo">
+      <slider  value="{{brightness}}" max="1" min="0" bindchange="sliderChange" step="0.02"></slider>
+    </view>
+  </view>
+  <view  class="page-section">
+    <view  class="page-section-title">获取屏幕亮度</view>
+    <view  class="page-section-demo">
+      <onekit-button  type="primary" bindtap="getBrightness">获取屏幕亮度</onekit-button>
+    </view>
+  </view>
+</view>
+
+

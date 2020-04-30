@@ -1,0 +1,27 @@
+<view  class="page">
+  <view  class="page-description">文件 API</view>
+  <view  class="page-section">
+    <view  class="page-section-title">选择文件</view>
+    <block  tt:if="{{tempFilePath != ''}}">
+      <image  src="{{tempFilePath}}" class="image"></image>
+    </block>
+    <block  tt:if="{{tempFilePath == '' && savedFilePath != ''}}">
+      <image  src="{{savedFilePath}}" class="image"></image>
+    </block>
+    <block  tt:if="{{tempFilePath == '' && savedFilePath == ''}}">
+      <view  class="image-plus" bindtap="chooseImage">
+        <view  class="image-plus-horizontal"></view>
+        <view  class="image-plus-vertical"></view>
+      </view>
+    </block>
+    <view  class="page-section-demo">
+      <onekit-button  class="page-body-button" type="primary" bindtap="saveFile">保存文件</onekit-button>
+      <onekit-button  class="page-body-button" type="primary" bindtap="getFileInfo">获取文件信息</onekit-button>
+      <onekit-button  class="page-body-button" type="primary" bindtap="getSavedFileInfo">获取保存的文件信息</onekit-button>
+      <onekit-button  class="page-body-button" type="primary" bindtap="getSavedFileList">获取保存的文件列表</onekit-button>
+      <onekit-button  class="page-body-button" type="primary" bindtap="removeSavedFile">移除保存的文件</onekit-button>
+      
+      <onekit-button  class="page-body-button" bindtap="clear">删除文件</onekit-button>
+    </view>
+  </view>
+</view>

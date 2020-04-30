@@ -1,0 +1,6 @@
+<view  class="page">
+  <view  class="page-section">
+    <onekit-button  type="primary" bindtap="showNavigationBarLoading">显示加载动画</onekit-button>
+    <onekit-button  bindtap="hideNavigationBarLoading">隐藏加载动画</onekit-button>
+  </view>
+</view>

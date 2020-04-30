@@ -1,0 +1,17 @@
+<view  class="video-page">
+<view  class="video-contain">
+  <onekit-video  src="{{src}}" class="video" id="video" poster="https://zos.alipayobjects.com/rmsportal/SSWkSLDrrgsLFDfsjzTZ.png" autoplay="{{autoplay}}" object-fit="{{objectFit}}" loop="{{loop}}" show-fullscreen-btn="{{showFullscreenBtn}}" show-center-play-btn="{{showCenterPlayBtn}}" bindplay="onPlay" bindpause="onPause" bindended="onEnded" bindtimeUpdate="onTimeUpdate" bindloading="onLoading" bindstop="onStop" enableNative="{{true}}" muted="{{muted}}">
+    </onekit-video>
+    </view>
+    <view  class="operation-item" style="background-color:lightblue">{{title}}</view>
+    <view  class="operation-item" bindtap="play">播放</view>
+    <view  class="operation-item" bindtap="pause">暂停</view>
+    <view  class="operation-item" bindtap="seek">跳到15s播放</view>
+    <view  class="operation-item" bindtap="mute">静音</view>
+    <view  class="operation-item" bindtap="playbackRate">倍速播放</view>
+    <view  class="operation-item" bindtap="requestFullScreen">全屏</view>
+    <view  class="operation-item" bindtap="exitFullScreen">退出全屏</view>
+    <view  class="operation-item" bindtap="showStatusBar">显示状态栏</view>
+    <view  class="operation-item" bindtap="hideStatusBar">隐藏状态栏</view>
+    <view  class="operation-item" bindtap="stop">停止播放</view>
+</view>

@@ -1,0 +1,36 @@
+<view  class="video-page">
+
+    <view  class="video-contain">
+        <audio  id="myAudio"></audio>
+    </view>
+    <view  class="video-contain">
+        <audio  id="audio2"></audio>
+    </view>
+    <view  class="operation-item" style="background-color:lightblue">{{title}}</view>
+    <view  class="operation-item" bindtap="play">播放</view>
+    <view  class="operation-item" bindtap="pause">暂停</view>
+    <view  class="operation-item" bindtap="seek">seek{{seek}}s播放</view>
+    <view  class="operation-item" bindtap="stop">停止播放</view>
+    <view  class="operation-item" bindtap="destroy">destroy</view>
+    <view  class="operation-item" bindtap="getAllProps">显示属性</view>
+
+    <picker  bindchange="offCallback" value="{{callbackIndex}}" range="{{callbackArr}}">
+        <view  class="row">
+          <view  class="row-title">offCallback</view>
+          <view  class="row-extra">当前选择：{{callback}}</view>
+        </view>
+    </picker>
+
+    
+    <view  class="operation-item" bindtap="play2">播放audio2</view>
+    <view  class="operation-item" bindtap="pause2">暂停audio2</view>
+    <view  class="operation-item" bindtap="getAllProps2">显示属性2</view>
+
+    <picker  bindchange="offCallback2" value="{{callback2Index}}" range="{{callback2Arr}}">
+        <view  class="row">
+          <view  class="row-title">offCallback</view>
+          <view  class="row-extra">当前选择：{{callback2}}</view>
+        </view>
+    </picker>
+
+</view>

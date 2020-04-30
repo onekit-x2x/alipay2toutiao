@@ -1,0 +1,8 @@
+.red{
+  background-color: red ;
+  border-color: red ;
+  color: #fff ;
+}
+onekit_button + onekit_button{
+  margin-top: 32rpx ;
+}

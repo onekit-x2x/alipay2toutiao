@@ -1,0 +1,19 @@
+<view  class="page">
+  <view  class="page-description">画布 API</view>
+  <view  class="page-section">
+    <view  class="page-section-title">my.createCanvasContext</view>
+    <view  class="page-section-demo">
+      <canvas  class="canvas-element" canvas-id="canvas" bindtap="log" bindtouchStart="log"></canvas>
+    </view>
+    <scroll-view  class="canvas-buttons" scroll-y="true">
+        <onekit-button  tt:for="{{methods}}" tt:for-item="method" class="canvas-button" type="primary" bindtap="{{method}}">{{method}}</onekit-button>
+    </scroll-view>
+    <scroll-view  class="canvas-buttons" scroll-y="true" style="height: 150rpx;">
+      <onekit-button  class="canvas-button" type="primary" bindtap="toTempFilePath">toTempFilePath</onekit-button>
+      <onekit-button  class="canvas-button" type="primary" bindtap="getImageData">getImageData</onekit-button>
+      <onekit-button  class="canvas-button" type="primary" bindtap="putImageData">putImageData</onekit-button>
+      <onekit-button  class="canvas-button" type="primary" bindtap="preloadCanvasImage">preloadCanvasImage</onekit-button>
+    </scroll-view>
+  </view>
+</view>
+

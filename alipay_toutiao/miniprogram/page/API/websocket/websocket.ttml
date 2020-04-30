@@ -1,0 +1,20 @@
+<view  class="container">
+  <view  class="subView">
+  <input  class="server_addr" placeholder="wss://YourServer/" bindconfirm="onServerAddressComplete" bindblur="onServerAddressComplete"></input>
+  </view>
+  <view  class="subView">
+    <onekit-button  class="buttons" name="startButton" bindtap="connect_start">开始连接</onekit-button>
+  </view>
+  <view  class="subView" tt:if="{{sendMessageAbility}}">
+    <input  class="message_text" placeholder="输入要发送的消息：" bindconfirm="onSendMessageReady" bindblur="onSendMessageReady"></input>
+  </view>
+  <view  class="subView" tt:if="{{sendMessageAbility}}">
+    <onekit-button  class="buttons" name="sendButton" bindtap="send_start">发送数据</onekit-button>
+  </view>
+  <view  class="subView" tt:if="{{closeLinkAbility}}">
+    <onekit-button  class="buttons" name="closeButton" bindtap="close_start">关闭</onekit-button>
+  </view>
+  <view >
+    <text  class="run_log">{{log}}</text>
+  </view>
+</view>

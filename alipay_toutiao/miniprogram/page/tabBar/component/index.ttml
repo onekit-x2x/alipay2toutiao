@@ -1,0 +1,36 @@
+<view >
+  <view  class="banner">
+    <view  class="logo" style="opacity: {{titleOpacity}}"><image  src="/image/component_logo.png" mode="aspectFit"></image></view>
+    <view  class="title" style="opacity: {{titleOpacity}}">小程序官方示例</view>
+    <view  class="sub-title" style="opacity: {{titleOpacity}}">以下展示小程序官方组件和API</view>
+  </view>
+  <view  class="tabs {{shadow ? 'shadow' : ''}}" style="top: {{top}}px">
+    <view  class="tabs-bar">
+      <block  tt:for="{{tabs}}" tt:key="item">
+        <view  class="tabs-bar-tab" data-index="{{index}}" bindtap="onTabBarTap">
+          <view  class="tabs-bar-tab-title {{activeTab == index ? 'active' : ''}}">{{item}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view  class="list-wrap">
+    <view  class="list-container" style=" transform:{{ 'translate3d(' +(-activeTab * 100) + 'vw, 0, 0)' }}">
+      <view  class="list" style=" height:{{ activeTab == 0 ? 'auto' : 0 }}">
+        <block  tt:for="{{basicComponentList}}" tt:key="type" tt:for-item="list">
+          <view  className="list-item">
+            <view  slot="header" class="list-header">{{list.type}}</view>
+            <block  tt:for="{{list.list}}" tt:key="list">
+              <view  arrow="{{true}}" multipleLine="{{false}}" key="items-{{item.name}}" last="{{true}}">
+                <navigator  url="{{item.path}}" style="display: flex; align-items: center">
+                  <image  src="{{item.thumb}}" class="thumb" mode="aspectFit"></image>
+                  <text  class="component-name">{{item.name}}</text>
+                  <text  class="component-brief">{{item.nameEn}}</text>
+                </navigator>
+              </view>
+            </block>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

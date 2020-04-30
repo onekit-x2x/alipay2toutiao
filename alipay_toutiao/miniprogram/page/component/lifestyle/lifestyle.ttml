@@ -1,0 +1,4 @@
+<view >
+    <lifestyle  tt:if="{{canUse}}" publicId="2016021701146995"></lifestyle>
+    <view  tt:else>请升级支付宝支持生活号跳转</view>
+</view>

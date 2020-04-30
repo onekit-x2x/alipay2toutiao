@@ -1,0 +1,18 @@
+<view  class="page">
+  <view  class="page-section">
+    <view  class="page-section-title">输入：</view>
+    <view  class="page-section-demo">
+      <textarea  value="{{inputValue}}" maxlength="500" bindinput="onInput"></textarea>
+    </view>
+
+    <view  class="page-section-title">输出：</view>
+    <view  class="page-section-demo">
+      <textarea  value="{{outputValue}}" maxlength="500"></textarea>
+    </view>
+
+    <view  class="page-section-btns">
+      <view  size="mini" bindtap="onEncrypt">加密</view>
+      <view  size="mini" bindtap="onDecrypt">解密</view>
+    </view>
+  </view>
+</view>

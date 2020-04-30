@@ -1,0 +1,279 @@
+<view  class="page">
+
+  <view  class="page-description">联系人 API</view>
+
+  <view  class="page-section">
+    <view  class="page-section-title">my.choosePhoneContact</view>
+    <view  class="page-section-demo">
+      <onekit-button  type="primary" bindtap="choosePhoneContact">唤起本地通讯录</onekit-button>
+    </view>
+  </view>
+
+  <view  class="page-section">
+    <view  class="page-section-title">my.chooseAlipayContact</view>
+    <view  class="page-section-demo">
+      <onekit-button  type="primary" bindtap="chooseAlipayContact">唤起支付宝通讯录</onekit-button>
+    </view>
+  </view>
+
+  <view  class="page-section">
+    <view  class="page-section-title">my.chooseContact</view>
+    <view  class="page-section-demo">
+      <onekit-button  type="primary" bindtap="chooseContact">选择联系人</onekit-button>
+    </view>
+  </view>
+
+  <view  class="page-section">
+    <view  class="page-section-title">my.addPhoneContact</view>
+    <view  class="page-section-demo">
+
+      <view  style="font-size:18px;margin-top:18px;margin-bottom:18px">
+        <text  style="font-size:18px;margin-top:18px;margin-bottom:18px">基本信息</text>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">昵称</view>
+        <view  class="form-row-content">
+          <input  id="nickName" bindinput="onInput" class="input" value="七月流火"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">姓氏</view>
+        <view  class="form-row-content">
+          <input  id="lastName" bindinput="onInput" class="input" value="Last"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">中间名</view>
+        <view  class="form-row-content">
+          <input  id="middleName" bindinput="onInput" class="input" value="Middle"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">名字</view>
+        <view  class="form-row-content">
+          <input  id="firstName" bindinput="onInput" class="input" value="First"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">备注</view>
+        <view  class="form-row-content">
+          <input  id="remark" bindinput="onInput" class="input" value="这里是备注"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">手机号</view>
+        <view  class="form-row-content">
+          <input  id="mobilePhoneNumber" bindinput="onInput" class="input" value="13800000000"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">支付宝账号</view>
+        <view  class="form-row-content">
+          <input  id="alipayAccount" bindinput="onInput" class="input" value="alipay@alipay.com"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">微信号</view>
+        <view  class="form-row-content">
+          <input  id="weChatNumber" bindinput="onInput" class="input" value="liuhuo"></input>
+        </view>
+      </view>
+
+      <view  style="font-size:18px;margin-top:18px;margin-bottom:18px">
+        <text  style="font-size:18px;margin-top:18px;margin-bottom:18px">联系地址</text>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">国家</view>
+        <view  class="form-row-content">
+          <input  id="addressCountry" bindinput="onInput" class="input" value="US"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">省份</view>
+        <view  class="form-row-content">
+          <input  id="addressState" bindinput="onInput" class="input" value="California"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">城市</view>
+        <view  class="form-row-content">
+          <input  id="addressCity" bindinput="onInput" class="input" value="San Francisco"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">街道</view>
+        <view  class="form-row-content">
+          <input  id="addressStreet" bindinput="onInput" class="input" value="Mountain View"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">邮政编码</view>
+        <view  class="form-row-content">
+          <input  id="addressPostalCode" bindinput="onInput" class="input" value="94016"></input>
+        </view>
+      </view>
+
+      <view  style="font-size:18px;margin-top:18px;margin-bottom:18px">
+        <text  style="font-size:18px;margin-top:18px;margin-bottom:18px">工作</text>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">公司</view>
+        <view  class="form-row-content">
+          <input  id="organization" bindinput="onInput" class="input" value="AntFin"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">职位</view>
+        <view  class="form-row-content">
+          <input  id="title" bindinput="onInput" class="input" value="Developer"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">工作传真</view>
+        <view  class="form-row-content">
+          <input  id="workFaxNumber" bindinput="onInput" class="input" value="11111111"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">工作电话</view>
+        <view  class="form-row-content">
+          <input  id="workPhoneNumber" bindinput="onInput" class="input" value="11111112"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">公司电话</view>
+        <view  class="form-row-content">
+          <input  id="hostNumber" bindinput="onInput" class="input" value="11111113"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">电子邮件</view>
+        <view  class="form-row-content">
+          <input  id="email" bindinput="onInput" class="input" value="liuhuo01@sina.com"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">网站</view>
+        <view  class="form-row-content">
+          <input  id="url" bindinput="onInput" class="input" value="www.alipay.com"></input>
+        </view>
+      </view>
+
+      <view  style="font-size:18px;margin-top:18px;margin-bottom:18px">
+        <text  style="font-size:18px;margin-top:18px;margin-bottom:18px">工作地址</text>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">国家</view>
+        <view  class="form-row-content">
+          <input  id="workAddressCountry" bindinput="onInput" class="input" value="China"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">省份</view>
+        <view  class="form-row-content">
+          <input  id="workAddressState" bindinput="onInput" class="input" value="Zhejiang"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">城市</view>
+        <view  class="form-row-content">
+          <input  id="workAddressCity" bindinput="onInput" class="input" value="Hangzhou"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">街道</view>
+        <view  class="form-row-content">
+          <input  id="workAddressStreet" bindinput="onInput" class="input" value="Tianmushan Road"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">邮政编码</view>
+        <view  class="form-row-content">
+          <input  id="workAddressPostalCode" bindinput="onInput" class="input" value="361005"></input>
+        </view>
+      </view>
+
+      <view  style="font-size:18px;margin-top:18px;margin-bottom:18px">
+        <text  style="font-size:18px;margin-top:18px;margin-bottom:18px">住宅</text>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">传真</view>
+        <view  class="form-row-content">
+          <input  id="homeFaxNumber" bindinput="onInput" class="input" value="11111114"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">电话</view>
+        <view  class="form-row-content">
+          <input  id="homePhoneNumber" bindinput="onInput" class="input" value="11111115"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">国家</view>
+        <view  class="form-row-content">
+          <input  id="homeAddressCountry" bindinput="onInput" class="input" value="Canada"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">省份</view>
+        <view  class="form-row-content">
+          <input  id="homeAddressState" bindinput="onInput" class="input" value="Ontario"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">城市</view>
+        <view  class="form-row-content">
+          <input  id="homeAddressCity" bindinput="onInput" class="input" value="Toronto"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">街道</view>
+        <view  class="form-row-content">
+          <input  id="homeAddressStreet" bindinput="onInput" class="input" value="No.234 Road"></input>
+        </view>
+      </view>
+
+      <view  class="form-row">
+        <view  class="form-row-label">邮政编码</view>
+        <view  class="form-row-content">
+          <input  id="homeAddressPostalCode" bindinput="onInput" class="input" value="123456"></input>
+        </view>
+      </view>
+
+      <onekit-button  type="primary" bindtap="addPhoneContact">添加到手机联系人</onekit-button>
+
+    </view>
+  </view>
+
+</view>

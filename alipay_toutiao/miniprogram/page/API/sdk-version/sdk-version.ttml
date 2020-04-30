@@ -1,0 +1,9 @@
+<view  class="page">
+  <view  class="page-description">获取基础库版本号 API</view>
+  <view  class="page-section">
+    <view  class="page-section-title">my.SDKVersion</view>
+    <view  class="page-section-demo">
+      <onekit-button  type="primary" bindtap="getSDKVersion">获取基础库版本号</onekit-button>
+    </view>
+  </view>
+</view>
