@@ -1,8 +1,6 @@
 // onekit/ui/scroll-view/scroll-view.js
 Component({
-  options: {
-        addGlobalClass: true,
-    },
+  
   data: {
 
   },

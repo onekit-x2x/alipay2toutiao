@@ -4,10 +4,10 @@ Component({
 
   },
   properties: {
-scaleArea: {
-            type: Boolean,
-            value: false
-        },
+    scaleArea: {
+      type: Boolean,
+      value: false
+    },
   },
   methods: {
 

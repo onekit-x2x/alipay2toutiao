@@ -1,8 +1,6 @@
 // onekit/ui/swiper/swiper.js
 Component({
-  options: {
-        addGlobalClass: true,
-    },
+  
   data: {
 
   },
