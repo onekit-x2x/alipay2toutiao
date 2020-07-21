@@ -39,20 +39,20 @@ page{
 .page-section-btns > view + view{
   border-left: 1px solid #ddd ;
 }
-onekit_button{
+onekit-button{
   margin-top: 20rpx ;
   margin-bottom: 20rpx ;
 }
-.bc_blue{
+.bc-blue{
   background-color: #49A9EE ;
 }
-.bc_red{
+.bc-red{
   background-color: #F04134 ;
 }
-.bc_yellow{
+.bc-yellow{
   background-color: #FFBF00 ;
 }
-.bc_green{
+.bc-green{
   background-color: #00A854 ;
 }
 .form-row{

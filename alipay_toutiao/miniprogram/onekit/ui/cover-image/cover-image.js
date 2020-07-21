@@ -1,8 +1,6 @@
 // onekit/ui/cover-image/cover-image.js
 Component({
-  options: {
-        addGlobalClass: true,
-    },
+  
   data: {
 
   },

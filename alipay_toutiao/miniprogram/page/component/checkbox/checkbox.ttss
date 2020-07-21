@@ -2,7 +2,7 @@
   display: block ;
   margin-bottom: 20rpx ;
 }
-onekit_button + onekit_button{
+onekit-button + onekit-button{
   margin-top: 32rpx ;
 }
 .checkbox-text{

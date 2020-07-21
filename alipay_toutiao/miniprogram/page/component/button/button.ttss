@@ -3,6 +3,6 @@
   border-color: red ;
   color: #fff ;
 }
-onekit_button + onekit_button{
+onekit-button + onekit-button{
   margin-top: 32rpx ;
 }
