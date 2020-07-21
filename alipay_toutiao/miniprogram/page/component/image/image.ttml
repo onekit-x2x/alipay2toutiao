@@ -3,7 +3,7 @@
   <view  class="page-section" tt:for="{{array}}" tt:key="item" tt:for-item="item">
     <view  class="page-section-title">{{item.text}}</view>
     <view  class="page-section-demo" bindtap="onTap">
-      <image  class="image" data-name="{{item.mode}}" bindtap="onTap" mode="{{item.mode}}" src="{{src}}" binderror="imageError" bindload="imageLoad"></image>
+      <onekit-image  Class="image" data-name="{{item.mode}}" bindtap="onTap" mode="{{item.mode}}" src="{{src}}" binderror="imageError" bindload="imageLoad"></onekit-image>
     </view>
   </view>
 </view>

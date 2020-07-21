@@ -6,7 +6,7 @@ Page({
     title: 'initial',
     autoplay: 'false',
     objectFit: 'contain',
-    showFullscreenBtn: 'false',
+    showFullscreenBtn: 'false',
     showCenterPlayBtn: 'false',
     muted: 'false',
     loop: 'false',
@@ -65,7 +65,7 @@ Page({
   },
   play(){
       this.videoContext.play();
-      this.videoContext.mute(this.muted);
+
   },
   pause(){
       this.videoContext.pause()
@@ -74,7 +74,7 @@ Page({
       this.videoContext.seek(15)
   },
   mute(){
-      this.videoContext.mute(!this.muted);
+ 
       this.muted = !this.muted;
   },
   stop(){

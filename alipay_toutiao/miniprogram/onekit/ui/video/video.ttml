@@ -27,15 +27,12 @@ auto-pause-if-navigate="{{auto-pause-if-navigate}}"
 auto-pause-if-open-native="{{auto-pause-if-open-native}}" 
 vslide-gesture="{{vslide-gesture}}" 
 vslide-gesture-in-fullscreen="{{vslide-gesture-in-fullscreen}}" 
-onPlay="{{onPlay}}" 
-onPause="{{onPause}}" 
-onEnded="{{onEnded}}" 
-onTimeupdate="video_onTimeupdate" 
-onFullscreenchange="{{onFullscreenchange}}" 
-onWaiting="{{onWaiting}}" 
-onError="{{onError}}" 
-onProgress="{{onProgress}}" 
+bindplay="{{video_play}}" 
+bindpause="{{onPause}}" 
+bindended="{{onEnded}}" 
+bindtimeupdate="video_onTimeupdate" 
+bindfullscreenchange="{{onFullscreenchange}}" 
+bindwaiting="{{onWaiting}}" 
+binderror="{{onError}}" 
+
 />
-<cover-view id="cover">
-  <canvas id="canvas"/>
-</cover-view>
