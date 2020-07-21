@@ -1,4 +1,3 @@
-import Context from "./api/Context"
 import CanvasContext from "./api/CanvasContext"
 import VideoContext from "./api/VideoContext"
 
@@ -127,10 +126,7 @@ export default class my {
     }
     canvasContext.draw();
   }
-  static createContext() {
-    var context = new Context();
-    return context;
-  }
+  
   static createCanvasContext(id) {
     return new CanvasContext(tt.createCanvasContext(id));
   }
