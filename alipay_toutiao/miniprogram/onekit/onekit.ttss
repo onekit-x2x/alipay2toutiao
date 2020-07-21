@@ -1,2 +1,354 @@
-input{background:transparent;}
-cover-view{background:transparent;}
+/* view */
+.onekit-view{
+  display:block;
+}
+/* swiper */
+.onekit-swiper{
+position:relative;
+display:block;
+visibility:visible;
+overflow:hidden;
+width:100%;
+height:150px;
+box-sizing:border-box;
+}
+
+/* swiper-item */
+.onekit-swiper-item, swiper-slides{
+position:absolute;
+width:100%;
+height:100%;
+}
+.onekit-swiper-item{
+will-change:auto;
+box-sizing:border-box;
+overflow:hidden;
+}
+.onekit-swiper-item{
+transform:translate(0%, 0px) translateZ(0px)
+}
+
+
+/* scroll-view */
+.onekit-scroll-view{
+overflow-y:hidden;
+overflow-x:auto
+}
+/* cover-view */
+.onekit-cover-image, .onekit-cover-view{
+overflow:hidden;
+pointer-events:auto;
+}
+
+.onekit-cover-view{
+display:block;
+line-height:1.2;
+white-space:nowrap;
+background-color:rgb(255, 255, 255)
+}
+/* cover-image */
+.onekit-cover-image{
+width:300px;
+height:225px;
+display:inline-block;
+}
+.onekit-cover-image{
+position:absolute;
+left:20px;
+top:100px;
+height:50px;
+width:50px;
+}
+
+
+/* movable-area */
+.onekit-movable-area, .onekit-movable-view{
+position:relative;
+width:10px;
+height:10px;
+}
+.onekit-movable-area{
+height:4rem;
+width:4rem;
+margin:0.5rem 0rem 0px 0.5rem;
+background-color:rgb(204, 204, 204);
+overflow:hidden;
+}
+
+/* movable-view*/
+.onekit-movable-area, .onekit-movable-view{
+position:relative;
+width:10px;
+height:10px;
+}
+.onekit-movable-view{
+display:inline-block;
+position:absolute;
+top:0px;
+left:0px;
+transform-origin:center center 0px;
+}
+.onekit-movable-view{
+display:flex;
+-webkit-box-align:center;
+align-items:center;
+-webkit-box-pack:center;
+justify-content:center;
+height:2rem;
+width:2rem;
+background:rgb(16, 142, 233);
+color:rgb(255, 255, 255);
+}
+
+.onekit-movable-view{
+transform-origin:center center 0px;
+transform:translateX(0px) translateY(0px) translateZ(0px) scale(1);
+}
+
+
+/* text */
+.onekit-text{
+white-space:pre-line
+}
+.onekit-text{
+user-select:none
+}
+/* icon */
+.onekit-icon{
+display:inline-block;
+font-size:0px;
+}
+/* progress */
+.onekit-progress{
+display:flex;
+-webkit-box-align:center;
+align-items:center;
+}
+.onekit-progress{
+margin-bottom:0.6rem;
+}
+
+/*button  primary*/
+.onekit-button{
+display:block;
+outline:0px;
+-webkit-appearance:none;
+box-sizing:border-box;
+padding:0px;
+text-align:center;
+font-size:18px;
+height:47px;
+line-height:47px;
+border-radius:2px;
+overflow:hidden;
+text-overflow:ellipsis;
+word-break:break-word;
+white-space:nowrap;
+color:rgb(0, 0, 0);
+background-color:rgb(255, 255, 255);
+border:1px solid rgb(238, 238, 238);
+}
+.onekit-button-ghostbutton-disabled{
+color:rgb(204, 204, 204);
+background-color:rgb(221, 221, 221);
+border:0px;
+}
+.onekit-button-ghost{
+color:rgb(16, 142, 233);
+background-color:transparent;
+border-color:rgb(16, 142, 233);
+}
+
+.onekit-buttonbutton-disabled{
+color:rgba(0, 0, 0, 0.6);
+background-color:rgba(255, 255, 255, 0.6);
+}
+.onekit-button[type=primary]{
+color:rgb(255, 255, 255);
+background-color:rgb(16, 142, 233);
+border-color:rgb(16, 142, 233);
+}
+.onekit-button-primarybutton-disabled{
+color:rgba(255, 255, 255, 0.6);
+background-color:rgb(159, 210, 246);
+border:0px;
+}
+.onekit-button{
+margin-top:0.2rem;
+margin-bottom:0.2rem;
+}
+.onekit-button + .onekit-button{
+margin-top:0.32rem;
+}
+
+/* label */
+.onekit-label{
+display:inline-block;
+line-height:1.8;
+}
+/* input */
+.onekit-input{
+display:inline-block;
+background-color:rgb(255, 255, 255);
+padding:2px 5px;
+color:rgb(0, 0, 0);
+font-size:17px;
+height:25px;
+box-sizing:content-box;
+}
+/* textarea */
+.onekit-textarea{
+position:relative;
+background-color:rgb(255, 255, 255);
+padding:2px 5px;
+color:rgb(0, 0, 0);
+font-size:17px;
+height:42px;
+line-height:1.4;
+}
+.onekit-textarea-show-count{
+padding-bottom:16px;
+}
+.onekit-textarea{
+height:auto;
+}
+
+/* radio */
+.onekit-shared-checkbox{
+position:relative;
+display:inline-block;
+vertical-align:text-bottom;
+border:1px solid rgb(201, 201, 201);
+border-radius:2px;
+width:22px;
+height:22px;
+margin-right:4px;
+box-sizing:border-box;
+}
+.onekit-shared-checkbox{
+position:relative;
+display:inline-block;
+vertical-align:text-bottom;
+border:1px solid rgb(201, 201, 201);
+border-radius:2px;
+width:22px;
+height:22px;
+margin-right:4px;
+box-sizing:border-box;
+}
+.onekit-radio{
+border-radius:100vh;
+}
+.onekit-radio-checked{
+border-width:0px
+}
+.onekit-shared-checkbox-disabled{
+background:rgb(216, 216, 216);
+}
+/* checkbox */
+.onekit-shared-checkbox{
+position:relative;
+display:inline-block;
+vertical-align:text-bottom;
+border:1px solid rgb(201, 201, 201);
+border-radius:2px;
+width:22px;
+height:22px;
+margin-right:4px;
+box-sizing:border-box;
+}
+.onekit-shared-checkbox-disabled{
+background:rgb(216, 216, 216);
+}
+/* switch */
+.onekit-switch, .onekit-switch .onekit-checkbox{
+box-sizing:border-box;
+z-index:0;
+cursor:pointer;
+position:relative;
+}
+.onekit-switch{
+display:inline-block;
+vertical-align:middle;
+align-self:center;
+}
+/* slider  */
+.onekit-slider{
+display:flex;
+-webkit-box-align:center;
+align-items:center;
+}
+/* picker-view*/
+.onekit-picker-view{
+display:flex;
+height:238px;
+-webkit-box-align:center;
+align-items:center;
+}
+/* navigator  */
+.onekit-navigator{
+  display: block;
+background-color:lightcoral;
+color:rgb(255, 255, 255);
+margin-bottom:0.1rem;
+padding:0.2rem;
+text-align:center;
+}
+/* image */
+.onekit-image{
+background-repeat:no-repeat;
+display:inline-block;
+overflow:hidden;
+font-size:0px;
+width:300px;
+height:225px;
+}
+.onekit-image{
+background-size:100% 100%;
+}
+
+/* video */
+.onekit-audio, .onekit-canvas,.onekit-video{
+display:inline-block
+}
+.onekit-video{
+width:300px;
+height:225px;
+position:relative;
+display:flex;
+-webkit-box-align:center;
+align-items:center;
+-webkit-box-pack:center;
+justify-content:center;
+}
+.onekit-video{
+object-fit:contain;
+}
+/*video*/
+.onekit-audio, .onekit-canvas, .onekit-video{
+display:inline-block
+}
+.onekit-canvas{
+width:300px;
+height:225px;
+}
+/* map */
+.onekit-map{
+width:100vw;
+height:100vh;
+}
+/* web-view */
+.onekit-web-view{
+position:fixed;
+top:0px;
+left:0px;
+bottom:0px;
+right:0px;
+width:100%;
+height:100%;
+display:none;
+}
+/* contact-button */
+.onekit-contact-button, loading-indicator, loading-item{
+display:inline-block
+}

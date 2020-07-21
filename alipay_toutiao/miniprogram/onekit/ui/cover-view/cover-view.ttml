@@ -1,0 +1,6 @@
+<cover-view
+bindtap="coverView_tap"
+>
+<slot>
+</slot>
+</cover-view>

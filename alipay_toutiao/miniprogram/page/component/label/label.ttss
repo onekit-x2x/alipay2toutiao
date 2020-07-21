@@ -1,6 +1,6 @@
-checkbox-group > view{
+.onekit-checkbox-group > view{
   margin-bottom: 12rpx ;
 }
-radio-group > view{
+.onekit-radio-group > view{
   margin-bottom: 12rpx ;
 }

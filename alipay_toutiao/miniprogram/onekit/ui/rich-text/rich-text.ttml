@@ -1,0 +1,6 @@
+<rich-text
+nodes="{{nodes}}"
+>
+<slot>
+</slot>
+</rich-text>

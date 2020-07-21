@@ -85,6 +85,7 @@
     {
       "root": "page/component",
       "pages": [
+        "navigator/navigator",
         "button/button",
         "canvas/canvas",
         "checkbox/checkbox",
@@ -97,7 +98,6 @@
         "navigator/navigate",
         "navigator/redirect",
         "navigator/reLaunch",
-        "navigator/navigator",
         "picker/picker",
         "picker-view/picker-view",
         "progress/progress",

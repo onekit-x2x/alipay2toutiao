@@ -17,7 +17,7 @@ Page({
 
   draw() {
     const { ctx } = this;
-    ctx.setFillStyle('#FFF');
+    ctx.setFillStyle('#FFFFFF');
     ctx.fillRect(0, 0, 610, 610);
 
     ctx.beginPath();
