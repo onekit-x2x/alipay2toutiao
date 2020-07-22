@@ -2,6 +2,7 @@ import my from "../../../onekit/my"
 Page({
   data: {
     src: "http://flv.bn.netease.com/tvmrepo/2012/7/C/7/E868IGRC7-mobile.mp4",
+ 
     //src:"https://youtu.be/J_WcqN1Hipg",
     title: 'initial',
     autoplay: 'false',

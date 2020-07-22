@@ -1,15 +1,17 @@
 Component({
+  data: {
+
+  },
 
     properties: {
         src: { 
             type: String, 
             value: "", 
         },
-        initialTime: { 
-            type: Number, 
-            value: "", 
-        },
-        
+        controls:{
+            type: Boolean, 
+            value:true,
+        }, 
         autoplay:{
             type: Boolean, 
             value: false,
@@ -18,46 +20,42 @@ Component({
              type: Boolean, 
             value: false,
         },
-        mute:{
-             type: Boolean, 
-            value: false,
-        },
-        pageGesture:{
-             type: Boolean, 
-            value: false,
-        },
-        direction:{
-            type: Number, 
-            value: "",
-        },
         showFullscreenBtn:{
              type: Boolean, 
             value: true,
+        },
+
+        
+        initialTime: { 
+            type: Number, 
+            value: "", 
         },
         showPlayBtn:{
              type: Boolean, 
             value: true,
         },
-        showCenterPlayBtn:{
-            type: Boolean, 
-            value: true,
+        objectFit:{
+             type: String, 
+            value: 'contain',
         },
-        showMuteBtn:{
-            type: Boolean, 
-            value: true,
+        
+        mute:{
+             type: Boolean, 
+            value: false,
         },
-        enableProgressGesture:{
-            type: Boolean, 
-            value: true,
+        
+        direction:{
+            type: Number, 
+            value: "",
         },
         poster:{
             type: String, 
             value: "",
         },
-        controls:{
-            type: Boolean, 
-            value:true,
-        }
+        
+        
+        
+        
     },
     methods: {
        video_play(e){
@@ -84,9 +82,6 @@ Component({
        console.log("video_error", e);
         this.triggerEvent('error',e.details)
        },
-       video_waiting(e){
-       console.log("video_waiting", e);
-        this.triggerEvent('waiting',e.details)
-       },
+      
     }
 });
