@@ -1,0 +1,4 @@
+<!-- onekit/ui/text/text.ttml -->
+<text class="onekit-text">
+     <slot/>
+</text>

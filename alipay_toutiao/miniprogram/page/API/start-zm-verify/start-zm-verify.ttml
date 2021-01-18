@@ -1,9 +1,0 @@
-<view  class="page">
-  <view  class="page-description">芝麻认证 API</view>
-  <view  class="page-section">
-    <view  class="page-section-title">my.startZMVerify</view>
-    <view  class="page-section-demo">
-      <onekit-button  type="primary" bindtap="startZMVerify">唤起认证页面</onekit-button>
-    </view>
-  </view>
-</view>

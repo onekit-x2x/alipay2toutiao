@@ -1,3 +1,0 @@
-<view  class="page">
-  <onekit-button  type="primary" bindtap="uploadFile">上传图片</onekit-button>
-</view>

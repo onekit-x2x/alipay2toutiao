@@ -1,9 +1,0 @@
-{
-  "usingComponents": {
-    "onekit-button": "/onekit/ui/button/button",
-    "onekit-checkbox": "/onekit/ui/checkbox/checkbox",
-    "onekit-icon": "/onekit/ui/icon/icon",
-    "onekit-map": "/onekit/ui/map/map",
-    "onekit-video": "/onekit/ui/video/video"
-  }
-}

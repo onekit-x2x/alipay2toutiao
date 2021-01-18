@@ -1,9 +1,0 @@
-<view  class="page">
-  <view  class="page-description">多级联选择器 API</view>
-  <view  class="page-section">
-    <view  class="page-section-title">my.multiLevelSelect</view>
-    <view  class="page-section-demo">
-      <onekit-button  type="primary" bindtap="openMultiLevelSelect">多级联选择器</onekit-button>
-    </view>
-  </view>
-</view>

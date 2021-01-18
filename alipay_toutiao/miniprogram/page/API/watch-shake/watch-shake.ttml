@@ -1,5 +1,0 @@
-<view  class="page">
-  <onekit-button  type="primary" bindtap="watchShake">
-    绑定摇一摇，点击 Shake 按钮看效果
-  </onekit-button>
-</view>

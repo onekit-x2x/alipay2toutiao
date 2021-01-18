@@ -1,0 +1,14 @@
+<map id="map" style="{{onekitStyle}}"
+id="{{onekitId}}"
+
+  longitude="{{longitude}}"
+  latitude="{{latitude}}"
+  scale="{{scale}}"
+  markers="{{markers}}"
+  polyline="{{polyline}}"
+  circles="{{circles}}"
+  controls="{{controls}}"
+  polygon="{{polygon}}"
+  include-points="{{include-points}}"
+  show-location="{{show-location}}"
+></map>

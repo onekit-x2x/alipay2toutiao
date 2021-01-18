@@ -1,9 +1,0 @@
-<view  class="page">
-  <view  class="page-description">操作菜单 API</view>
-  <view  class="page-section">
-    <view  class="page-section-title">my.showActionSheet</view>
-    <view  class="page-section-demo">
-      <onekit-button  type="primary" bindtap="showActionSheet">显示操作菜单</onekit-button>
-    </view>
-  </view>
-</view>

@@ -1,9 +1,0 @@
-<view  class="page">
-  <view  class="page-section">
-    <form  bindsubmit="scanCode"></form>
-      <view >
-        <onekit-button  type="primary" bindtap="scan">扫码</onekit-button>
-      </view>
-    </form>
-  </view>
-</view>

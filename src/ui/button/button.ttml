@@ -1,0 +1,28 @@
+<button
+  scope="phoneNumber"
+  onTap="button_onTap"
+  size="{{size}}"
+  type="{{type}}"
+  plain="{{plain}}"
+  disabled="{{disabled}}"
+  loading="{{loading}}"
+  formType="{{formType}}"
+  open-type="{{open-type}}"
+  hover-class="{{hover-class}}"
+  hover-stop-propagation="{{hover-stop-propagation}}"
+  hover-start-time="{{hover-start-time}}"
+  hover-stay-time="{{hover-stay-time}}"
+  bindgetuserinfo="{{bindgetuserinfo}}"
+  bindcontact="{{bindcontact}}"
+  bindgetphonenumber="{{bindgetphonenumber}}"
+  binderror="{{binderror}}"
+  bindlaunchapp="{{bindlaunchapp}}"
+  bindopensetting="{{bindopensetting}}"
+  >
+ <slot/>
+</button> 
+<!-- <cover-view  onTap="contactBG_tap" class="swan-button"> 
+  <view  onTap="contactBG_tap" hidden="{{hideContact}}" style="padding-top:200rpx;text-align: center; width: 750rpx;height:100%;position:absolute;left:0;top:0;font-size: 20px;background-color: rgba(0, 0, 0, 0.5)">
+<contact-button size="400rpx" tnt-inst-id="FUCPINMW" scene="SCE00038444"/>
+</view>
+</cover-view> -->
