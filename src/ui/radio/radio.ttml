@@ -1,14 +1,2 @@
-<radio
-class="onekit-radio {{onekitClass}}"
-style="{{onekitStyle}}"
-id="{{onekitId}}"
-
-value="{{value}}"
-checked="{{checked}}"
-disabled="{{disabled}}"
-color="{{color}}"
-
-bindtap="item_tap"
->
-<slot></slot>
-</radio>
+<!-- onekit/ui/radio/radio.ttml -->
+<text>onekit/ui/radio/radio.ttml</text>

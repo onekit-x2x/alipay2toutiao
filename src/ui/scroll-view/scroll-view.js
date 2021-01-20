@@ -1,71 +1,60 @@
-// onekit/ui/scroll-view/scroll-view.js
+
 Component({
-  /**
-   * 组件的属性列表
-   */
-  options: {
-    styleIsolation: 'apply-shared'
+
+  data: {
+
   },
   properties: {
-    Class: {type: String, value: ''},
-    Style: {type: String, value: ''},
     scrollX: {
       type: Boolean,
       value: false,
     },
     scrollY: {
       type: Boolean,
-      value: false
+      value: false,
     },
-    UpperThreshold: {
-      type: Number,
-      value: 50
+    upperThreshold: {
+      // eslint-disable-next-line no-bitwise
+      type: Number | String,
+      value: '50',
     },
-    LowerThreshold: {
-      type: Number,
-      value: 50
+    lowerThreshold: {
+      // eslint-disable-next-line no-bitwise
+      type: Number | String,
+      value: '50',
     },
-    ScrollIntoView: {
+    scrollTop: {
+      // eslint-disable-next-line no-bitwise
+      type: Number | String,
+      value: '',
+    },
+    scrollLeft: {
+      // eslint-disable-next-line no-bitwise
+      type: Number | String,
+      value: '',
+    },
+    scrollIntoView: {
       type: String,
-      value: ''
+      value: '',
     },
-    ScrollTop: {
-      type: Number,
-      value: 0
-    },
-    ScrollLeft: {
-      type: Number,
-      value: 0
-    },
-    ScrollWithAnimation: {
+    scrollWithAnimation: {
       type: Boolean,
-      value: false
+      value: false,
     },
-    EnableBackToTop: {
+    enableBackToTop: {
       type: Boolean,
-      value: false
+      value: false,
     },
   },
-
-  /**
-   * 组件的初始数据
-   */
-  data: {
-
-  },
-
-  /**
-   * 组件的方法列表
-   */
   methods: {
-    on_toupper() {
-      this.triggerEvent('scrolltoupper', {})
+    on_toupper(e) {
+      this.triggerEvent('scrolltoupper', e)
     },
-    on_tolower() {
-      this.triggerEvent('scrolltolower', {})
+    on_tolower(e) {
+      this.triggerEvent('scrolltolower', e)
     },
-    on_scroll() {
-      this.triggerEvent('scroll', {})
+    on_scroll(e) {
+      this.triggerEvent('scroll', e)
     }
   }
 })

@@ -1,13 +1,9 @@
-<checkbox
-  class="onekit-checkbox {{onekitClass}}"
-  style="{{onekitStyle}}"
-id="{{onekitId}}"
-
+<view>
+<checkbox 
   value="{{value}}" 
   disabled="{{disabled}}"
   checked="{{checked}}"
   color="{{color}}"
-
-  onChange="checkbox_change">
-  <slot></slot>
-</checkbox>
+  onChange="{{onChange}}}"/>
+<slot/>
+</view>

@@ -1,9 +1,2 @@
-<label
-class="onekit-label {{onekitClass}}"
-style="{{onekitStyle}}"
-id="{{onekitId}}"
-
-for="{{for}}"
->
-<slot></slot>
-</label>
+<!-- onekit/ui/label/label.ttml -->
+<text>onekit/ui/label/label.ttml</text>

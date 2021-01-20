@@ -1,6 +1,6 @@
 {
   "pages": [
-    "example/index"
+    "zeng/zeng"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -16,16 +16,16 @@
   },
   "debug": true,
   "usingComponents": {
-    "onekit-ad":"baidu2toutiao/ui/ad/ad",
-    "onekit-animation-video":"baidu2toutiao/ui/animation-video/animation-video",
-    "onekit-animation-view":"baidu2toutiao/ui/animation-view/animation-view",
-    "onekit-button":"baidu2toutiao/ui/button/button",
-    "onekit-icon":"baidu2toutiao/ui/icon/icon",
-    "onekit-rtc-room":"baidu2toutiao/ui/rtc-room/rtc-room",
-    "onekit-rtc-room-item":"baidu2toutiao/ui/rtc-room-item/rtc-room-item",
-    "onekit-tab-item":"baidu2toutiao/ui/tab-item/tab-item",
-    "onekit-tabs":"baidu2toutiao/ui/tabs/tabs",
-    "onekit-view":"baidu2toutiao/ui/view/view"
+    "onekit-ad":"alipay2toutiao/ui/ad/ad",
+    "onekit-animation-video":"alipay2toutiao/ui/animation-video/animation-video",
+    "onekit-animation-view":"alipay2toutiao/ui/animation-view/animation-view",
+    "onekit-button":"alipay2toutiao/ui/button/button",
+    "onekit-icon":"alipay2toutiao/ui/icon/icon",
+    "onekit-rtc-room":"alipay2toutiao/ui/rtc-room/rtc-room",
+    "onekit-rtc-room-item":"alipay2toutiao/ui/rtc-room-item/rtc-room-item",
+    "onekit-tab-item":"alipay2toutiao/ui/tab-item/tab-item",
+    "onekit-tabs":"alipay2toutiao/ui/tabs/tabs",
+    "onekit-view":"alipay2toutiao/ui/view/view"
   },
   "sitemapLocation": "sitemap.json"
 }

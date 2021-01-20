@@ -1,8 +1,0 @@
-
-<navigator
-url="{{url}}"
-open-type="{{openType}}"
-hover-class="{{hoverClass}}"
->
-<slot></slot>
-</navigator>

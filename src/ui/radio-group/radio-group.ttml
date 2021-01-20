@@ -1,11 +1,2 @@
-<view
-id="view_id"
-class="onekit-radio-group {{onekitClass}}"
-style="{{onekitStyle}}"
-id="{{onekitId}}"
-
-bindclick="radio_click"
->
-
-<slot></slot>
-</view>
+<!-- onekit/ui/radio-group/radio-group.ttml -->
+<text>onekit/ui/radio-group/radio-group.ttml</text>

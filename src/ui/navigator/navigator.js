@@ -1,11 +1,6 @@
-/* eslint-disable no-console */
 Component({
   properties: {
-    // 在哪个目标上发生跳转，默认当前小程序
-    target: {
-      type: String,
-      value: 'self'
-    },
+
     // 当前小程序内的跳转链接
     url: {
       type: String,
@@ -19,27 +14,11 @@ Component({
       value: 'navigate',
     },
     // 当 open-type 为 'navigateBack' 时有效，表示回退的层数
-    delta: {
-      type: Number,
-      value: 1,
-    },
+
     // 当target="miniProgram"时有效，要打开的小程序 appId
-    appId: {
-      type: String,
-    },
-    path: {
-      type: String,
-    },
-    extraData: {
-      type: Object,
-    },
-    version: {
-      type: String,
-      value: 'release',
-    },
+
     hoverClass: {
-      type: String,
-      value: 'navigator-hover',
+      type: String
     },
     hoverStartTime: {
       type: Number,
@@ -49,19 +28,7 @@ Component({
       type: Number,
       value: 600,
     },
-    hoverStopPropagation: {
-      type: Boolean,
-      value: false,
-    },
-    bindsuccess: {
-      type: String
-    },
-    bindfail: {
-      type: String
-    },
-    bindcomplete: {
-      type: String
-    },
+
 
     // 这里定义了 headerText 属性，属性值可以在组件使用时指定
     headerText: {
@@ -74,68 +41,6 @@ Component({
     defaultStates: {}
   },
   methods: {
-    // 自定义方法
-    view_tap() {
-      console.log('dddddd', this.properties.openType)
-      // const app_id = this.properties.appId
-      const version = this.properties.version
-
-      // console.log('appid:', app_id)
-      console.log('version:', version)
-      // switch (this.properties.target) {
-      //   case 'self':
-      //     this._target_self()
-      //     break
-
-      //   case 'miniProgram':
-      //     console.log('aaa')
-      //     this._target_miniProgram()
-      //     break
-      // }
-    },
-    _target_self() {
-      const url = this.properties.url
-      switch (this.properties.openType) {
-        case 'redirectTo':
-          tt.redirectTo({
-            url
-          })
-          break
-        case 'navigateBack':
-          tt.navigateBack()
-          break
-        case 'navigate':
-          if (this.properties.redirect) {
-            console.log('sss')
-            tt.redirectTo({
-              url,
-
-            })
-          } else {
-            tt.navigateTo({
-              url
-            })
-          }
-
-          break
-        default:
-          break
-      }
-    },
-    _target_miniProgram() {
-      const appId = this.properties.appId
-      console.log('xxxxx:', appId)
-      //  "tta6cdd07039e72db5"
-      tt.navigateToMiniProgram({
-        appId: 'tta6cdd07039e72db5',
-        success(e) {
-          console.log('ddddd', e)
-        },
-        fail(e) {
-          console.log(e)
-        }
-      })
-    }
 
   }
 

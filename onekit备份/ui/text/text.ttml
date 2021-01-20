@@ -1,7 +1,0 @@
-<text
-selectable="{{selectable}}"
-space="{{space}}"
-decode="{{decode}}"
->
-<slot></slot>
-</text>

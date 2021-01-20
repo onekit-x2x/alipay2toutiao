@@ -1,14 +1,10 @@
 // onekit/ui/swiper/swiper.js
 Component({
-  /**
-   * 组件的属性列表
-   */
-  options: {
-    styleIsolation: 'apply-shared'
+
+  data: {
+
   },
   properties: {
-    Class: {type: String, value: ''},
-    Style: {type: String, value: ''},
     indicatorDots: {
       type: Boolean,
       value: false
@@ -19,23 +15,23 @@ Component({
     },
     indicatorActiveColor: {
       type: String,
-      value: '#333'
+      value: '#000'
     },
     autoplay: {
       type: Boolean,
-      value: false,
+      value: false
     },
     current: {
       type: Number,
       value: 0
     },
+    duration: {
+      type: Number,
+      value: 500
+    },
     interval: {
       type: Number,
       value: 5000
-    },
-    duration: {
-      type: Number,
-      value: 500,
     },
     circular: {
       type: Boolean,
@@ -53,28 +49,36 @@ Component({
       type: String,
       value: '0px'
     },
-    displayMultipleItems: {
-      type: Number,
-      value: 1,
+    activeClass: {
+      type: String,
+      value: ''
+    },
+    changingClass: {
+      type: String,
+      value: ''
+    },
+    acceleration: {
+      type: Boolean,
+      value: false
+    },
+    disableProgrammaticAnimation: {
+      type: Boolean,
+      value: false
+    },
+    disableTouch: {
+      type: Boolean,
+      value: false
     }
   },
-
-  /**
-   * 组件的初始数据
-   */
-  data: {
-
-  },
-
-  /**
-   * 组件的方法列表
-   */
   methods: {
-    swiper_Change(e) {
-      this.triggerEvent('change', e)
+    swiper_change(e) {
+      this.triggerEvent('change', e.detail)
+    },
+    swiper_transition(e) {
+      this.triggerEvent('Transition', e)
     },
     swiper_AnimationEnd(e) {
-      this.triggerEvent('animationfinish', e)
+      this.triggerEvent('animationfinish', e.detail)
     }
   }
 })

@@ -22,7 +22,7 @@ Component({
       this.setData({polyline})
     },
     polygons(polygons) {
-      this.setData({polygons})
+      this.setData(polygons)
     },
     circles(circles) {
       this.setData({circles})
@@ -59,7 +59,7 @@ Component({
     }
   },
   didMount() {
-    this.mapCtx = tt.createMapContext('map')
+    // this.mapCtx = my.createMapContext('map')
   },
   didUpdate() { },
   didUnmount() { },

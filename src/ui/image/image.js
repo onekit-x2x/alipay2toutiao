@@ -1,10 +1,9 @@
 /* eslint-disable no-console */
 
-
 Component({
-//  options: {
-//         addGlobalClass: true,
-//     },
+  options: {
+    addGlobalClass: true,
+  },
   properties: {
     src: {
       type: String,
@@ -14,7 +13,6 @@ Component({
       type: String,
       value: 'scaleToFill',
     },
-
     lazyLoad: {
       type: Boolean,
       value: false,

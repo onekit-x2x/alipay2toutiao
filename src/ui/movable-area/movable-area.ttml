@@ -1,8 +1,4 @@
 <movable-area
-class="onekit-movable-area {{onekitClass}}"
-style="{{onekitStyle}}"
-id="{{onekitId}}"
-
 scale-area="{{scaleArea}}"
 >
 <slot>

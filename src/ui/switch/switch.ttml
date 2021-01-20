@@ -1,14 +1,2 @@
-<switch
-class="onekit-switch {{onekitClass}}"
-style="{{onekitStyle}}"
-id="{{onekitId}}"
-
-checked="{{checked}}"
-type="{{type}}"
-disabled="{{disabled}}"
-color="{{color}}"
-bindchange="switch_change"
-
->
-<slot></slot>
-</switch>
+<!-- onekit/ui/switch/switch.ttml -->
+<text>onekit/ui/switch/switch.ttml</text>

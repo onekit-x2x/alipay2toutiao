@@ -1,45 +1,30 @@
-export default class VideoContext {
-  constructor(toutiaoVideoContext) {
-    this.toutiaoVideoContext = toutiaoVideoContext
+export default class VideoContext{
+  constructor(ttVideoContext) {
+    this.ttVideoContext = ttVideoContext;
   }
-
-  play() {
-    return this.toutiaoVideoContext.play()
+  play(){
+    return  this.ttVideoContext.play();
   }
-
-  pause() {
-    return this.toutiaoVideoContext.pause()
+  pause(){
+    return  this.ttVideoContext.pause();
   }
-
-  seek(position) {
-    return this.toutiaoVideoContext.seek(position)
+  stop(){
+    return  this.ttVideoContext.stop();
   }
-
-  // sendDanmu() {
-  //   return this.toutiaoVideoContext.play()
-  // }
-
-  requestFullScreen(object) {
-    return this.toutiaoVideoContext.requestFullScreen(object)
+  seek(position){
+    return this.ttConvasContext.seek(position);
   }
-
-  exitFullScreen() {
-    return this.toutiaoVideoContext.exitFullScreen()
+ 
+  requestFullScreen(){
+    return this.ttConvasContext.requestFullScreen();
   }
+  exitFullScreen(){
+      return this.ttConvasContext.exitFullScreen();
+    }
+ 
 
-  // showStatusBar() {
-  //   return this.toutiaoVideoContext.showStatusBar()
-  // }
 
-  // hideStatusBar() {
-  //   return this.toutiaoVideoContext.hideStatusBar()
-  // }
 
-  stop() {
-    return this.toutiaoVideoContext.stop()
-  }
 
-  // playbackRate(rate) {
-  //   return this.toutiaoVideoContext.playbackRate(rate)
-  // }
+
 }

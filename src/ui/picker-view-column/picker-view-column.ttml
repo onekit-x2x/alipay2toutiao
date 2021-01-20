@@ -1,8 +1,0 @@
-  <picker-view-column 
-  class="onekit-picker-view-column {{Class}}" 
-  style="{{Style}}"
-
-  >
-  <slot>
-  </slot>
-  </picker-view-column>

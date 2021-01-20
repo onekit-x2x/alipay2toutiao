@@ -1,6 +1,0 @@
-<movable-area
-scale-area="{{scaleArea}}"
->
-<slot>
-</slot>
-</movable-area>

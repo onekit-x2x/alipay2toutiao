@@ -1,5 +1,0 @@
-<swiper-item
-item-id="{{id}}"
->
-<slot></slot>
-</swiper-item>

@@ -1,5 +1,2 @@
-<canvas 
-canvas-id="{{canvasId}}"
-disable-scroll="{{disableScroll}}"
->
+<canvas type="{{type}}" canvas-id="{{id}}" width="{{width}}" height="{{height}}" style="width:{{width}}rpx;height:{{height}}rpx">
 </canvas>
